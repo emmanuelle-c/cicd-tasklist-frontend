@@ -10,7 +10,7 @@ function App() {
     try {
       await addTask(data);
     } catch {
-      // Error handled by useTasks
+      alert('Erreur lors de l\'ajout de la tâche. Veuillez réessayer.');
     }
   };
 
