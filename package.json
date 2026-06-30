@@ -10,7 +10,7 @@
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:watch": "vitest",
-    "sonar:scan": "env-cmd sonar"
+    "sonar:scan": "sonar-scanner"
   },
   "dependencies": {
     "@emnapi/core": "^1.11.1",
@@ -30,6 +30,7 @@
     "@vitest/coverage-v8": "^4.1.9",
     "env-cmd": "^11.0.0",
     "jsdom": "^29.1.1",
+    "sonarqube-scanner": "^4.3.8",
     "typescript": "~6.0.2",
     "vite": "^8.0.12",
     "vitest": "^4.1.9"
