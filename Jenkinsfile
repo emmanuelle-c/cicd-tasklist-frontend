@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Analysis with SonarQube') {
             steps {
-                withSonarQubeEnv('sonar-qube') {
+                withSonarQubeEnv('sonar-qube-frontend') {
                     sh 'npm run sonar:scan'
                 }
             }
