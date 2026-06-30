@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Run Tests unit and coverage') {
             steps {
-                withEnv(['VITE_API_URL=http://localhost:3001']) {
+                withEnv(['VITE_API_URL=http://localhost:3001/api']) {
                     sh 'npm run test && npm run test:coverage'
                 }
             }
