@@ -13,7 +13,9 @@ pipeline {
         }
         stage('Run Tests unit and coverage') {
             steps {
-                sh 'npm run test && npm run test:coverage'
+                withEnv(['VITE_API_URL=http://localhost:3001']) {
+                    sh 'npm run test && npm run test:coverage'
+                }
             }
         }
         stage('Publish tests on Jenkins') {
